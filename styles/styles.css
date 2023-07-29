@@ -1,34 +1,65 @@
 html {
-    background-color: #001C30;
-    color: #DAFFFB;
+    background-color: #FFF6E0;
+    color: #272829;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     margin: 0;
 }
 
-nav {
-    background-color: #176B87;
-    margin: 0;
-    padding: 0;
+footer {
+    text-align: center;
 }
 
-div {
+nav {
+    background-color: #D8D9DA;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+p {
+    font-weight: 600;
+}
+
+.content {
     margin: 8px;
 }
 
-.devicon-html5-plain-wordmark {
+.introduction {
+    display: flex;
+    justify-content: center;
+}
+
+.personal {
+    margin: 80px 120px;
+}
+
+.skills {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.skills i {
     font-size: 50px;
 }
 
-.devicon-css3-plain-wordmark {
-    font-size: 50px;
+#title-name {
+    font-size: 100px;
+    margin: 0;
 }
 
-.devicon-javascript-plain {
-    font-size: 50px;
-}
-
-.devicon-react-original {
-    font-size: 50px;
+#title-description {
+    font-size: 80px;
+    margin: 0;
 }
