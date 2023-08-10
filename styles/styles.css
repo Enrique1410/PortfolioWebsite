@@ -1,48 +1,91 @@
-html {
-    background-color: #FFF6E0;
-    color: #272829;
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
     font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+    padding-right: 4rem;
+    padding-top: 4rem;
 }
 
 footer {
     text-align: center;
 }
 
-nav {
-    background-color: #D8D9DA;
-    margin: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 6px;
-    padding-right: 6px;
-}
-
 a {
     text-decoration: none;
-    color: inherit;
-    font-weight: bold;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 1.5rem;
 }
 
-p {
-    font-weight: 600;
+span {
+    font-weight: 300;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 3;
+}
+
+.personal p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.showcase {
+    background-image: linear-gradient(to right, #000000, #000000, #808080);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
 }
 
 .content {
     margin: 8px;
 }
 
-.introduction {
+.personal {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin: 5px 5rem 5px 5rem;
+    flex: 50%;
 }
 
-.personal {
-    margin: 80px 120px;
+.image {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+@media screen and (max-width: 700px) {
+    .introduction {
+        flex-direction: column;
+    }
+}
+
 
 .skills {
     display: flex;
@@ -55,11 +98,11 @@ p {
 }
 
 #title-name {
-    font-size: 100px;
+    font-size: 3.75rem;
     margin: 0;
 }
 
 #title-description {
-    font-size: 80px;
+    font-size: 3.75rem;
     margin: 0;
 }
